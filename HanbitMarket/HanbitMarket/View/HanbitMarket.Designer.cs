@@ -1,4 +1,4 @@
-﻿namespace HanbitMarket
+﻿namespace HanbitMarket.View
 {
     partial class HanbitMarket
     {

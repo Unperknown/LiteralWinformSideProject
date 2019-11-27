@@ -65,7 +65,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\CustomerRelationRepository.cs" />
     <Compile Include="Model\Database.cs" />
+    <Compile Include="Model\IRelationRepository.cs" />
+    <Compile Include="Model\RelationRepository.cs" />
     <Compile Include="Presenter\DatabasePresenter.cs" />
     <Compile Include="View\HanbitMarket.cs">
       <SubType>Form</SubType>

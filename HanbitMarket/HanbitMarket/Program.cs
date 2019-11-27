@@ -16,7 +16,13 @@ namespace HanbitMarket
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HanbitMarket());
+
+            var repository = new Model.CustomerRelationRepository();
+            var view = new View.HanbitMarket();
+            
+            var presenter = new Presenter.DatabasePresenter(view, repository);
+
+            Application.Run(view);
         }
     }
 }
